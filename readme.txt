@@ -7,4 +7,4 @@ Sandra - primarily front end, getting things such as login, registration, databa
 
 Steven - Website layout, view, etc
 
-Richard - search engine, entries, bug-fixing
+Richard - search engine, entries, assisting with bug-fixing
