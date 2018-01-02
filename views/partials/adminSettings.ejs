@@ -1,0 +1,51 @@
+<div class="row-fluid col-md-12 well submitForm">
+	<h1 class="text-center">Admin Settings</h1>
+	<br>
+	<br>
+	<form class="form-horizontal" action="/findUser" method="post">
+		<fieldset>
+			<!-- Search User-->
+			<div class="form-group">
+				<label class="col-xs-2 control-label" for="userId">Find User</label>
+				<div class="col-xs-10">
+					<input id="userId" name="post[userId]" type="text" placeholder="sample@domain.com" class="form-control">
+				</div>
+			</div>
+			<div class="col-xs-12 text-right">
+					<button type="submit" class="btn btn-primary btn-lg">Find</button>
+			</div>
+		</fieldset>
+	</form>
+	<br>
+	<br>
+	<form class="form-horizontal" action="/findPostByTitle" method="post">
+		<fieldset>
+			<!-- Search Post-->
+			<div class="form-group">
+				<label class="col-xs-2 control-label" for="userId">Find Post</label>
+				<div class="col-xs-10">
+					<input id="post" name="post[post]" type="text" placeholder="Title" class="form-control">
+				</div>
+			</div>
+			<div class="col-xs-12 text-right">
+					<button type="submit" class="btn btn-primary btn-lg">Find</button>
+			</div>
+		</fieldset>	
+	</form>
+	<br>
+	<br>
+	<form class="form-horizontal" action="/findPostByKeywords" method="post">
+		<fieldset>
+			<!-- Search Post-->
+			<div class="form-group">
+				<label class="col-xs-2 control-label" for="userId">Find Post</label>
+				<div class="col-xs-10">
+					<input id="post" name="post[post]" type="text" placeholder="Keywords" class="form-control">
+				</div>
+			</div>
+			<div class="col-xs-12 text-right">
+					<button type="submit" class="btn btn-primary btn-lg">Find</button>
+			</div>
+		</fieldset>	
+	</form>
+</div>

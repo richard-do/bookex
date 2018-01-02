@@ -1,0 +1,37 @@
+<!-- views/index.ejs -->
+<!doctype html>
+<html>
+<head>
+    <title>UTM Book Ex</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <style>
+        body        { padding-top:80px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="jumbotron text-center">
+		<img src="img/utbookex.png"/>
+        <h1>UTM Book Exchange</h1>
+		<br>
+		<h2> Where Students come to buy, sell, or trade school supplies!</h5>
+		<br>
+        <p>Login or Register with:</p>
+
+        <!-- show any messages that come back with authentication -->
+        <% if (message.length > 0) { %>
+            <div class="alert alert-danger"><%= message %></div>
+        <% } %>
+
+        <a href="/login" class="btn btn-default"><span class="fa fa-user"></span> Local Login</a>
+        <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span> Local Signup</a>
+        <a href="/auth/facebook" class="btn btn-primary"><span class="fa fa-facebook"></span> Facebook</a>
+
+    </div>
+
+</div>
+</body>
+</html>

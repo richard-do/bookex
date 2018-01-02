@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<% include ../partials/header.ejs %>
+<body>
+	<div class="container-fluid">
+		<% include ../partials/alwaysInclude.ejs %>
+
+
+		<!-- This should only be seen by owner-->
+		<div class="postReqButtons col-md-9">
+			<% include ../partials/profileSettings.ejs %>
+		</div> 
+		<!-- This can be seen by public-->
+		<div class="postReqButtons col-md-9">
+			<% include ../partials/profileStats.ejs %>
+		</div> 
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+
+<p class="comment">
+	<p>
+		<p>
+			<%= commentBO.getDescription();%>
+		</p> 
+	</p>
+	<p class="comment-author"> 
+		<p>
+			Author: <%= commentBO.getAuthorId();%>
+		</p> 
+
+	</p>
+	<p class="comment-date"> 
+		Written on: <%= new Date(commentBO.getCreatedAt());%>
+	</p>
+</p>
