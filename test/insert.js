@@ -11,7 +11,7 @@ var userProfileSchema = new mongoose.Schema({
 
 var UserProfile = mongoose.model("UserProfile", userProfileSchema);
 
-var userDAO = {_id: 'jiecao.wang@gmail.com', password: 1234};
+var userDAO = {_id: '', password: };
 var userJiecao = new UserProfile(userDAO);
 
 
